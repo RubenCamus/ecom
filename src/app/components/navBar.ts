@@ -12,7 +12,6 @@ import { Logo } from "./logo";
         padding: 10px 10px;
         margin-left: 10vh;
         width: fit-content;
-        background-color: rgb(145, 176, 201);
         border-radius: 5px;
     }`
 })

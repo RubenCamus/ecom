@@ -1,14 +1,15 @@
 import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
 
 
 @Component ({
     selector: 'nav-list',
     template: `
     <ul>
-        <li><a href="index.html">Home</a> </li>
-        <li><a href="contact.html">Contact</a> </li>
-        <li><a href="about.html">About Us</a> </li>
-        <li><a href="products.html">Products & Services</a> </li>
+        <li><a routerLink="">Home</a> </li>
+        <li><a routerLink="/contact">Contact</a> </li>
+        <li><a routerLink="/about">About Us</a> </li>
+        <li><a routerLink="/products">Products & Services</a> </li>
     </ul>
     `,
     styles: `
@@ -31,7 +32,8 @@ import { Component } from "@angular/core";
         a:link { 
             color: blue;
         }
-    `
+    `,
+    imports: [RouterLink]
 })
 
 export class NavList {}
