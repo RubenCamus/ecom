@@ -2,22 +2,32 @@ import {Component} from '@angular/core';
 import { HomePage } from './components/home';
 import {RouterLink, RouterOutlet} from '@angular/router';
 import { NavBar } from "./components/navBar";
+import { Cart } from "./components/cart";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterLink, RouterOutlet, NavBar],
+  imports: [RouterLink, RouterOutlet, NavBar, Cart],
   template: `
   <main>
     <a [routerLink]="['/']">
       <header class="brand-name"></header>
-        <img class="brand-logo" src="/public/favicon.ico" alt="logo" aria-hidden="true">
     </a>
     <section class="content">
-      <nav-bar/>
+      <nav-bar (toggle)="toggleCart()">
+      </nav-bar>
       <router-outlet/>
     </section>
-    <footer>Pepito</footer>
+    @if (mostrarCarrito)  {
+      <cart (close)="toggleCart()"/>
+    }
   </main>`,
   styleUrls: ['./app.css'],
 })
-export class App {}
+export class App {
+  mostrarCarrito = false;
+
+  toggleCart() { 
+    this.mostrarCarrito = !this.mostrarCarrito;
+  }
+
+}

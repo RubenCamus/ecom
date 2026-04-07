@@ -2,7 +2,7 @@ import { ResolveFn, Routes } from '@angular/router';
 import { HomePage } from './components/home';
 import { Contact } from './components/contact';
 import { About } from './components/about';
-import { Products } from './components/products';
+import { Products } from './components/catalog/products';
 
 const titleResolver:  ResolveFn<string> = (route) => route.queryParams['id'];
 
