@@ -1,0 +1,27 @@
+.page-container { 
+    display:block;
+}
+
+.buy.buttons {
+    display: vertical;
+}
+
+.images-row {
+    border: 4px;
+    border-color: black;
+    border-style: groove;
+    display: flex;
+}
+
+.big-image {
+    width: 50vw;
+    height: 60vh;
+}
+
+.small-image {
+    border: 2px;
+    border-style: dotted;
+    width: 200px;
+    height: 200px;
+    margin-inline-end: 10px;
+}

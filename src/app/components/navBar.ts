@@ -1,7 +1,8 @@
-import {Output,  EventEmitter, Component,} from "@angular/core";
+import {Output,  EventEmitter, Component, inject,} from "@angular/core";
 import { NgOptimizedImage } from "@angular/common";
 import { Logo } from "./logo";
 import { RouterLink } from "@angular/router";
+import { CartService } from "../cart-service";
 
 @Component({
     selector: 'nav-bar',
@@ -10,7 +11,8 @@ import { RouterLink } from "@angular/router";
         <li><a routerLink="products">Products & Services</a> </li>
         <li><a routerLink="contact">Contact</a> </li>
         <li><a routerLink="about">About Us</a> </li>
-        <li><img class="shopping-cart" (click)="onClick()" src="/shopping-cart.svg" alt="shopping-cart"></li>
+        <li style="display: flex"><img class="shopping-cart" (click)="onClick()" src="/shopping-cart.svg" alt="shopping-cart"> 
+        <p style="color: red;">{{cartService.parseCart()?.length}}</p></li>
     </ul> </nav>`,
     imports: [Logo, RouterLink],
     styles: `
@@ -55,4 +57,5 @@ export class NavBar {
     onClick() {
         this.toggle.emit();
     }
+    cartService = inject(CartService);
 }

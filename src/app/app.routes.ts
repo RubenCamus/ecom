@@ -3,7 +3,7 @@ import { HomePage } from './components/home';
 import { Contact } from './components/contact';
 import { About } from './components/about';
 import { Products } from './components/catalog/products';
-
+import { ProductPage } from './product-page/product-page';
 const titleResolver:  ResolveFn<string> = (route) => route.queryParams['id'];
 
 export const routes: Routes = [
@@ -25,6 +25,11 @@ export const routes: Routes = [
     {
         path: 'products',
         component: Products,
+        title: titleResolver,
+    },
+    {
+        path: 'product-page',
+        component: ProductPage,
         title: titleResolver,
     },
 ];
