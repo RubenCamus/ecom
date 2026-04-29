@@ -47,7 +47,7 @@ export class CartService {
 
   addToCart(product: any) {
     var cart = this.parseCart();
-    if (cart == null || cart == undefined) {
+    if (cart == null || cart == undefined || cart.length == 0) {
       product.quantity = 1;
       localStorage.setItem('cart', JSON.stringify([product]));
       return;

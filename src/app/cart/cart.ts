@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter, inject } from "@angular/core";
-import { CartService } from "../cart-service";
+import { CartService } from "../services/cart-service";
 
 
 @Component ({
@@ -12,7 +12,7 @@ import { CartService } from "../cart-service";
         </div>
         `,
     imports: [], 
-    styleUrl: '../styles/cart.css',
+    styleUrl: './cart.css',
 })
 export class Cart {
     @Output() close = new EventEmitter<void>();

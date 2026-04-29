@@ -1,9 +1,9 @@
 import { ResolveFn, Routes } from '@angular/router';
-import { HomePage } from './components/home';
-import { Contact } from './components/contact';
-import { About } from './components/about';
-import { Products } from './components/catalog/products';
-import { ProductPage } from './product-page/product-page';
+import { HomePage } from './home/home';
+import { Contact } from './contact/contact';
+import { About } from './about/about';
+import { Products } from './products/catalog/products';
+import { ProductPage } from './products/product-page/product-page';
 const titleResolver:  ResolveFn<string> = (route) => route.queryParams['id'];
 
 export const routes: Routes = [

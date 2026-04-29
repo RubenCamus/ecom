@@ -74,7 +74,7 @@ import { Component } from "@angular/core";
         </div>
     </div>
     `,
-    styleUrl: '../styles/home.css'
+    styleUrl: './home.css'
 })
 
 export class HomePage {}

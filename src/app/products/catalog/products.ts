@@ -13,7 +13,7 @@ import { ProductDisplay } from "./product-display";
         </div>
     </div>
     `,
-    styleUrl: '../../styles/products.css',
+    styleUrl: './products.css',
     imports: [ProductDisplay]
 })
 

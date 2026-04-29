@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter, inject } from "@angular/core";
-import { CartService } from "../../cart-service";
+import { CartService } from "../../services/cart-service";
 
 @Component ({
     selector: 'product-display',
@@ -17,7 +17,7 @@ import { CartService } from "../../cart-service";
             </div>
         </div>
     </div>`,
-    styleUrl: '../../styles/productdisplay.css'
+    styleUrl: './productdisplay.css'
 })
 
 export class ProductDisplay {

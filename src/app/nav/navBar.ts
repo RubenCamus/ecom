@@ -1,8 +1,8 @@
 import {Output,  EventEmitter, Component, inject,} from "@angular/core";
 import { NgOptimizedImage } from "@angular/common";
-import { Logo } from "./logo";
+import { Logo } from "../services/logo";
 import { RouterLink } from "@angular/router";
-import { CartService } from "../cart-service";
+import { CartService } from "../services/cart-service";
 
 @Component({
     selector: 'nav-bar',

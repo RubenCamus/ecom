@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
-import { HomePage } from './components/home';
+import { HomePage } from './home/home';
 import {RouterLink, RouterOutlet} from '@angular/router';
-import { NavBar } from "./components/navBar";
-import { Cart } from "./components/cart";
+import { NavBar } from './nav/navBar';
+import { Cart } from "./cart/cart";
 
 @Component({
   selector: 'app-root',

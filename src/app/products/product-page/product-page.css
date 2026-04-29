@@ -11,6 +11,20 @@
     border-color: black;
     border-style: groove;
     display: flex;
+    width: 50vw;
+}
+.image-button { 
+    background: none;
+    color: none;
+    border: none;
+}
+.images-list {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 0;
+    list-style: none;
+    display: flex;    
 }
 
 .big-image {
@@ -18,10 +32,15 @@
     height: 60vh;
 }
 
+
 .small-image {
     border: 2px;
     border-style: dotted;
     width: 200px;
     height: 200px;
     margin-inline-end: 10px;
+}
+
+.top-container { 
+    display: flex;
 }
