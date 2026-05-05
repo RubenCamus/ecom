@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { RouterLink } from "@angular/router";
 import { Certificates } from "./certificates";
+import { Featured } from "./featured";
 @Component ({
     selector: "home-page",
     template: `
@@ -15,17 +16,8 @@ import { Certificates } from "./certificates";
         </div>
     </div>
     <certificates/>
-    <div class="featured-container">
-        <div class="featured-head">
-            <h2>Featured On</h2>
-        </div>
-        <div class="featured-brands">
-            <img class="featured-image" src="https://static.photos/640x360/90" alt="brand">
-            <img class="featured-image" src="https://static.photos/640x360/94" alt="brand">
-            <img class="featured-image" src="https://static.photos/640x360/190" alt="brand">
-            <img class="featured-image" src="https://static.photos/640x360/20" alt="brand">
-        </div>
-    </div>
+    <featured/>
+    
     <div class="reviews-container">
         <div class="reviews-head">
             <h2>Customer Top Picks</h2>
@@ -61,7 +53,7 @@ import { Certificates } from "./certificates";
     </div>
     `,
     styleUrl: './home.css',
-    imports: [RouterLink, Certificates]
+    imports: [RouterLink, Certificates, Featured]
 })
 
 export class HomePage {}
