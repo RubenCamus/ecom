@@ -35,6 +35,7 @@
     cursor: pointer;
 }
 .certificates-bar {
+    font-family: 'Outfit', sans;
     color: white;
     display: flex;
     height:fit-content;

@@ -9,8 +9,15 @@
     margin-left: auto;
     margin-right: 0;
     z-index: 3;
-}
 
+}
+.cart-title { 
+    color: white;
+    text-align: center;
+}
+.cart-top-container { 
+    
+}
 .cart-close-button {
     
 } 
