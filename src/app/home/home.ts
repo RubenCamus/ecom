@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { RouterLink } from "@angular/router";
+import { Certificates } from "./certificates";
 @Component ({
     selector: "home-page",
     template: `
@@ -13,23 +14,7 @@ import { RouterLink } from "@angular/router";
             <img class="landing-image" src="https://static.photos/640x360/193" alt="landing-image">
         </div>
     </div>
-    <div class="certificates-bar">
-        <img class="certificate-image" src="https://static.photos/640x360/1" alt="certificate-icon">
-        <div class="certificate-box">
-            <p class="certificate-title">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
-        </div>
-        <img class="certificate-image" src="https://static.photos/640x360/1" alt="certificate-icon">
-        <div class="certificate-box">
-            <p class="certificate-title">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
-        </div>
-        <img class="certificate-image" src="https://static.photos/640x360/1" alt="certificate-icon">
-        <div class="certificate-box">
-            <p class="certificate-title">Lorem ipsum</p>
-            <p>Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet</p>
-        </div>
-    </div>
+    <certificates/>
     <div class="featured-container">
         <div class="featured-head">
             <h2>Featured On</h2>
@@ -76,7 +61,7 @@ import { RouterLink } from "@angular/router";
     </div>
     `,
     styleUrl: './home.css',
-    imports: [RouterLink]
+    imports: [RouterLink, Certificates]
 })
 
 export class HomePage {}
