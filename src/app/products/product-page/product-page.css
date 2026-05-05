@@ -7,9 +7,9 @@
 }
 
 .images-row {
-    border: 4px;
-    border-color: black;
-    border-style: groove;
+    border: 2px;
+    border-color: grey;
+    border-style: dotted;
     display: flex;
     width: 50vw;
 }
@@ -24,7 +24,7 @@
     margin-left: 5px;
     padding: 0;
     list-style: none;
-    display: flex;    
+    display: flex;  
 }
 
 .big-image {
@@ -36,11 +36,15 @@
 .small-image {
     border: 2px;
     border-style: dotted;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     margin-inline-end: 10px;
 }
 
 .top-container { 
     display: flex;
+}
+
+.product-content { 
+    padding-left: 15px;
 }

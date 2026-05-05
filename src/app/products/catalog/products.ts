@@ -5,10 +5,11 @@ import { ProductDisplay } from "./product-display";
 @Component ({
     selector: 'products',
     template: ` 
-    <h1>Products</h1>
     <div class="products-container">
-       <p>Sort by: </p> <br>
+        <h1>Products</h1>
+        <p style="">Sort by: </p> <br>
         <div class="products-display">
+            <product-display onclick="" />
             <product-display/>
         </div>
     </div>

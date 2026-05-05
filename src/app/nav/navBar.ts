@@ -1,41 +1,45 @@
 import {Output,  EventEmitter, Component, inject,} from "@angular/core";
 import { NgOptimizedImage } from "@angular/common";
-import { Logo } from "../services/logo";
+import { Logo } from "../logo";
 import { RouterLink } from "@angular/router";
 import { CartService } from "../services/cart-service";
 
 @Component({
     selector: 'nav-bar',
-    template: `<nav><logo/>    <ul>
-        <li><a routerLink="">Home</a> </li>
-        <li><a routerLink="products">Products & Services</a> </li>
-        <li><a routerLink="contact">Contact</a> </li>
-        <li><a routerLink="about">About Us</a> </li>
-        <li style="display: flex"><img class="shopping-cart" (click)="onClick()" src="/shopping-cart.svg" alt="shopping-cart"> 
-        <p style="color: red;">{{cartService.parseCart()?.length}}</p></li>
-    </ul> </nav>`,
+    template: `
+    <nav>
+        <logo/>
+        <ul>
+            <li><a routerLink="">Home</a> </li>
+            <li><a routerLink="products">Products & Services</a> </li>
+            <li><a routerLink="contact">Contact</a> </li>
+            <li><a routerLink="about">About Us</a> </li>
+        </ul>
+        <div class="icons-div">
+            <img class="icon" (click)="onClick()" src="/shopping-cart.svg" alt="shopping-cart"><p style="color: red;">{{cartService.parseCart()?.length}}</p>
+            <img class="icon" src="/person-icon.svg" alt="profile-icon">
+        </div>
+    </nav>
+    `,
     imports: [Logo, RouterLink],
     styles: `
-    nav { 
-        display: flex;
-        padding: 0px 10px;
-        border-radius: 5px;
-        width: max-content;
-        margin-left: 50px;
-        margin-bottom: 20px;
+    nav {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
         font-size: 24px;
+        padding: 0rem 0rem 0px;
+        background-color: black;
     }
-    ul { 
+    ul {
+        padding: 0rem 0 0 0;
         list-style-type: none;
-        margin: 0;
-        padding: 0;
         display: flex;
+        justify-content: center;
     }
     ul li a {
-        display: block;
         text-decoration: none;
-        padding: 0px 50px;
-        
+        padding: 0px 30px;
+        color: white;
     }
     a:visited { color:black;}
     a:hover {
@@ -44,9 +48,18 @@ import { CartService } from "../services/cart-service";
     a:link { 
         color: blue;
     }
-    .shopping-cart { 
+    .icons-div {
+        padding: 1.5rem 4rem 0 0 ;
+        justify-self: end;
+        display: flex;
+        gap: 6px;
+    }
+    .icon {
         width: 30px;
         height: 30px;
+    }
+    .icon:hover { 
+        cursor: pointer;
     }
     `
 })

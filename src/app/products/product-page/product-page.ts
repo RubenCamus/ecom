@@ -10,13 +10,13 @@ import { ProductService } from '../../services/product-service';
       <div>
         <img class="big-image" src="https://static.photos/640x360/1451" alt="">
       </div>
-      <div>
+      <div class="product-content">
         <h2>Product Name</h2>
         <span>Discounted price</span>
-        <span style="color: red;">Old price</span>
+        <span style="color: red; padding-left:10px; padding-right: 10px;">Old price</span>
         <input type="">
         <div class="buy-buttons">
-          <button>Add to cart</button>
+          <button style="margin-right:10px;margin-top: 10px;">Add to cart</button>
           <button>Buy now</button>
         </div>
       </div>

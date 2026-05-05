@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
 @Component ({
     selector: "home-page",
     template: `
@@ -6,7 +7,7 @@ import { Component } from "@angular/core";
         <div class="landing-container">
         <h2 style="font-size: 48px;"> 40% OFF</h2>
         <p>Lorem ipsum dolor sit amet</p>
-        <button class="landing-button">SHOP NOW</button>
+        <button routerLink="products" class="landing-button">SHOP NOW</button>
         </div>    
         <div>
             <img class="landing-image" src="https://static.photos/640x360/193" alt="landing-image">
@@ -74,7 +75,8 @@ import { Component } from "@angular/core";
         </div>
     </div>
     `,
-    styleUrl: './home.css'
+    styleUrl: './home.css',
+    imports: [RouterLink]
 })
 
 export class HomePage {}

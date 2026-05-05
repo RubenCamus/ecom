@@ -1,0 +1,9 @@
+.products-container { 
+    padding-left: 2rem;
+}
+.products-display { 
+    display: flex;
+}
+product-display { 
+    padding: 5px;
+}
