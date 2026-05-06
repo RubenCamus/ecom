@@ -26,9 +26,9 @@
     font-weight: 400;
 }
 .landing-button:hover { 
-    background-color: beige;
+    background-color: rgb(128, 89, 31);
     border-color: rgb(87, 87, 54);
-    color: rgb(170, 125, 88);
+    color: white;
     cursor: pointer;
 }
 

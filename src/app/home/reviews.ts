@@ -13,25 +13,25 @@ import { Component } from "@angular/core";
             <ul class="reviews-list">
                 <li class="reviews-item">
                     <div class="reviews-image-container">
-                        <img class="reviews-image" src="https://static.photos/640x360/20" alt="product image">
+                        <img class="reviews-image" src="/shampooImage.jpg" alt="product image">
                     </div>
                     <div class="reviews-text">
-                        <h2>Product Name</h2>
+                        <h2>SOFT SHAMPOO</h2>
                         <p>Stars Placeholder</p>
-                        <p>"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"</p>
-                        <p>Reviewer's name</p>
+                        <p>"This shampoo is gentle yet effective, leaving hair feeling clean without stripping natural oils."</p>
+                        <p>Daniel Kovacs, Hungary</p>
                         <button>Browse product category</button>
                     </div>
                 </li>
                 <li class="reviews-item">
                     <div class="reviews-image-container">
-                        <img class="reviews-image" src="https://static.photos/640x360/20" alt="product image">
+                        <img class="reviews-image" src="/facialcream.jpg" alt="product image">
                     </div>
                     <div class="reviews-text">
-                        <h2>Product Name</h2>
+                        <h2>Facial cream</h2>
                         <p>Stars Placeholder</p>
-                        <p>"Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet"</p>
-                        <p>Reviewer's name</p>
+                        <p>"This cream delivers deep hydration without feeling heavy or greasy. It absorbs quickly into the skin, leaving a soft, plump finish."</p>
+                        <p>Chris Amber, England</p>
                         <button>Browse product category</button>
                     </div>
                 </li>
