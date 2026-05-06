@@ -4,7 +4,7 @@ import { Component } from "@angular/core";
 
 @Component ({
     selector: 'logo',
-    template: `<div class="logo-container"> <img class="logo-image" ngSrc="../../favicon.ico" width="20" height="20" alt="logo"/></div>`,
+    template: `<div class="logo-container"> <img class="logo-image" ngSrc="../../favicon.ico" width="100" height="50" alt="logo"/></div>`,
     imports: [NgOptimizedImage],
     styles: `
     .logo-container{

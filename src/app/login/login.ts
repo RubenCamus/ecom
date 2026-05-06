@@ -5,21 +5,21 @@ import { Component } from "@angular/core";
     selector: 'login',
     template: `
     <div class="login-wrapper">
-        <img src="" alt="Logo">
+        <img width="100px" src="/favicon.ico" alt="Logo">
         <div class="welcome-wrapper">
             <span>Welcome Back!</span>
             <h2>Log in</h2>
         </div>
         <div class="input-wrapper">
-            <span>Email</span>
-            <input type="text">
+            <label>Email</label>
+            <input type="email">
             <div class="password-wrapper">
-                <span>Password</span>
+                <label>Password</label>
                 <a href="">Forgot Password?</a>
             </div>
-            <input type="text">
+            <input type="password">
             <button id="login-button">Log in</button>
-            <span id="signup-span">Don't have an account? <a href="">Sign Up</a></span>
+            <label id="signup-span">Don't have an account? <a href="">Sign Up</a></label>
         </div>
     </div>
     <div>
