@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
 
 
 @Component ({
@@ -19,7 +20,7 @@ import { Component } from "@angular/core";
             </div>
             <input type="password">
             <button id="login-button">Log in</button>
-            <label id="signup-span">Don't have an account? <a href="">Sign Up</a></label>
+            <label id="signup-span">Don't have an account? <a routerLink="/signup">Sign Up</a></label>
         </div>
     </div>
     <div>
@@ -27,6 +28,7 @@ import { Component } from "@angular/core";
     </div>
     `,
     styleUrl: './login.css',
+    imports: [RouterLink],
 })
 
 export class Login {
