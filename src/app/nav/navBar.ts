@@ -17,7 +17,7 @@ import { CartService } from "../services/cart-service";
         </ul>
         <div class="icons-div">
             <img class="icon" (click)="onClick()" src="/shopping-cart.svg" alt="shopping-cart"><p style="color: red;">{{cartService.parseCart()?.length}}</p>
-            <img class="icon" src="/person-icon.svg" alt="profile-icon">
+            <img routerLink="login" class="icon" src="/person-icon.svg" alt="profile-icon">
         </div>
     </nav>
     `,
