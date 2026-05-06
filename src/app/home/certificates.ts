@@ -28,7 +28,7 @@ import { Component } from "@angular/core";
                 </div>
             </div>
         </div>`,
-    styleUrl: './home.css',
+    styleUrl: './certificates.css',
 })
 
 export class Certificates {

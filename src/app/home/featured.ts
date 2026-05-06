@@ -15,7 +15,7 @@ import { Component } from "@angular/core";
             <img class="featured-image" src="https://static.photos/640x360/20" alt="brand">
         </div>
     </div>`,
-    styleUrl: './home.css',
+    styleUrl: './featured.css',
 })
 
 export class Featured {

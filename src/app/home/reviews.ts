@@ -38,7 +38,7 @@ import { Component } from "@angular/core";
             </ul>    
         </div>
     </div>`,
-    styleUrl: './home.css'
+    styleUrl: './reviews.css'
 })
 
 export class Reviews { 
