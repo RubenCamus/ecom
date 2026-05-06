@@ -34,27 +34,43 @@
     color: rgb(170, 125, 88);
     cursor: pointer;
 }
+
+.certificate-text-wrapper {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    margin: 0px;
+    padding: 0 1rem;
+    font-size: 12px;
+    font-weight: 100;
+}
+.certificate-text-wrapper span { 
+    align-self: bottom;
+}
 .certificates-bar {
     font-family: 'Outfit', sans;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
     height:fit-content;
     margin-bottom: 1rem;
+    padding: 2rem 2rem;
     align-items: center;
     background-color: #5D3F3D;
 }
 .certificate-title { 
     font-size: 24px;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 .certificate-box {
-    display: vertical;
-    margin-right: 1rem;
-    width: 20vw;
+    display: flex;
+    padding: 0rem 1rem;
 }
 .certificate-image {
-    margin-left: 3rem;
-    margin-right:2rem;
     height: 100px;
     width: 100px;
 }
