@@ -1,0 +1,43 @@
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+}
+.group-a {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.group-b { 
+    width: 50%;
+}
+
+.stores-wrapper{ 
+    display: flex;
+}
+.store { 
+    padding-right: 2rem;
+}
+
+.socials-wrapper { 
+    display: flex;
+    padding: 1rem;
+}
+.socials-wrapper a {
+    color: white;
+    text-decoration: none;
+}
+.socials-wrapper img { 
+    padding: 0rem 1rem;
+}
+.policies-wrapper { 
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 0 1rem;
+}
+.policies-wrapper a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
