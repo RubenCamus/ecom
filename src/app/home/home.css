@@ -24,9 +24,9 @@
     color: white;
     background-color: rgb(0, 0, 0);
     border-color: rgb(55, 55, 70);
-    border-width: 2px;
-    border-style: groove;
-    font-weight: bolder;
+    border-width: 1px;
+    border-style: solid;
+    font-weight: 400;
 }
 .landing-button:hover { 
     background-color: beige;
