@@ -24,6 +24,7 @@ import { CartService } from "../services/cart-service";
     imports: [Logo, RouterLink],
     styles: `
     nav {
+        font-family: 'Outfit', sans-serif;
         display: grid;
         grid-template-columns: 20% 60% 20%;
         font-size: 24px;
