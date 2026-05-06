@@ -13,7 +13,7 @@ import { Reviews } from "./reviews";
         <button routerLink="products" class="landing-button">SHOP NOW</button>
         </div>    
         <div>
-            <img class="landing-image" src="https://static.photos/640x360/193" alt="landing-image">
+            <img class="landing-image" src="/landingHero.png" alt="landing-image">
         </div>
     </div>
     <certificates/>
