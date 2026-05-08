@@ -21,7 +21,10 @@ body {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2%;
 }
 /* Colors Palette */
 /*  */

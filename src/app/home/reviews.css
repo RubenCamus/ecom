@@ -2,8 +2,9 @@
     text-align: center;
 }
 #reviews-title {
-    padding-top: 1rem;
-    font-size: 28px;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-size: 22px;
 }
 .reviews-list  {
     display: flex;
