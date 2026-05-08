@@ -20,7 +20,7 @@ import { RouterLink } from "@angular/router";
             </div>
             <input type="password">
             <button id="login-button">Log in</button>
-            <label id="signup-span">Don't have an account? <a routerLink="/signup">Sign Up</a></label>
+            <label id="signup-span">Don't have an account? <a routerLink="/auth/signup">Sign Up</a></label>
         </div>
     </div>
     <div>

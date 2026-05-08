@@ -6,7 +6,7 @@ import { RouterLink } from "@angular/router";
     selector: 'login',
     template: `
     <div class="login-wrapper">
-        <img width="100px" src="/favicon.ico" alt="Logo">
+        <a routerLink="''"><img width="100px" src="/favicon.ico" alt="Logo"></a>
         <div class="welcome-wrapper">
             <span>Welcome!</span>
             <h2>Sign up</h2>
@@ -23,7 +23,7 @@ import { RouterLink } from "@angular/router";
             <label >Confirm password</label>
             <input type="password">
             <button id="signup-button">Sign up</button>
-            <label id="login-span">Already have an acount? <a routerLink="/login">Log in</a></label>
+            <label id="login-span">Already have an acount? <a routerLink="/auth/login">Log in</a></label>
         </div>
     </div>
     <div>
