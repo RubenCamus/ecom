@@ -6,29 +6,42 @@ import { Products } from './products/catalog/products';
 import { ProductPage } from './products/product-page/product-page';
 import { Login } from './login/login';
 import { SignUp } from './login/signup';
+import { MainLayout } from './layouts/mainLayout';
 const titleResolver:  ResolveFn<string> = (route) => route.queryParams['id'];
 
 export const routes: Routes = [
     {
         path: '',
-        component: HomePage,
-        title: titleResolver,
+        component: MainLayout,
+        children: [
+            {
+                path: 'about',
+                component: About,
+                title: titleResolver,
+            },
+            {
+                path: '',
+                component: HomePage,
+                title: titleResolver,
+            },
+            {
+                path: 'contact',
+                component: Contact,
+                title: titleResolver,
+            },
+            {
+                path: 'about',
+                component: About,
+                title: titleResolver,
+            },
+            {
+                path: 'products',
+                component: Products,
+                title: titleResolver,
+            },
+        ],
     },
-    {
-        path: 'contact',
-        component: Contact,
-        title: titleResolver,
-    },
-    {
-        path: 'about',
-        component: About,
-        title: titleResolver,
-    },
-    {
-        path: 'products',
-        component: Products,
-        title: titleResolver,
-    },
+
     {
         path: 'product-page',
         component: ProductPage,

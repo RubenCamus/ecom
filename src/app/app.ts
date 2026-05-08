@@ -7,22 +7,9 @@ import { FooterApp } from './footer/footerApp';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterLink, RouterOutlet, NavBar, Cart, FooterApp],
+  imports: [RouterOutlet],
   template: `
-    <nav-bar (toggle)="toggleCart()">
-    </nav-bar>
-  <main>
-    <a [routerLink]="['/']">
-      <header class="brand-name"></header>
-    </a>
-    <section class="content">
-      <router-outlet/>
-    </section>
-    @if (mostrarCarrito)  {
-      <cart (close)="toggleCart()"/>
-    }
-  </main>
-  <footer-app/>
+  <router-outlet/>
   `,
   styleUrls: ['./app.css'],
 })
