@@ -6,7 +6,7 @@ import { RouterLink } from "@angular/router";
     selector: 'login',
     template: `
     <div class="login-wrapper">
-        <img width="100px" src="/favicon.ico" alt="Logo">
+        <a routerLink="/"><img width="100px" src="/favicon.ico" alt="Logo"></a>
         <div class="welcome-wrapper">
             <span>Welcome Back!</span>
             <h2>Log in</h2>
