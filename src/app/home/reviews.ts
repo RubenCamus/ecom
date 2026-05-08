@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
     template: `
     <div class="reviews-container">
         <div class="reviews-head">
-            <h2>Customer Top Picks</h2>
+            <h2 id="reviews-title">Customer Top Picks</h2>
         </div>
         <div class="reviews-box">
             <ul class="reviews-list">

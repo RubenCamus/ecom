@@ -1,7 +1,10 @@
 .reviews-head { 
     text-align: center;
 }
-
+#reviews-title {
+    padding-top: 1rem;
+    font-size: 28px;
+}
 .reviews-list  {
     display: flex;
     list-style: none;
@@ -15,15 +18,18 @@
     display: flex;
     margin-right: 10px;
     width: 50%;
+    height: 15rem;
 }
 .reviews-image-container {
     margin-top: 1rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    width: 24rem ;
+    height: 12rem;
 }
 .reviews-image { 
-    width: 10rem;
-    height: 12rem;
+    width: 100%;
+    height: 100%;
 }
 .reviews-box { 
     display: flex;
@@ -31,13 +37,14 @@
     margin-left: 4rem;
     margin-right: 4rem;
     font-family: 'Outfit',sans-serif;
+    padding-bottom: 2rem;
 }
 .reviews-text {
     margin-left: 20px;
     display: vertical;
     color: rgb(0, 0, 0);
 }
-.reviews-text h2 { 
+.reviews-text h2 {
     font-weight: 400;
     font-size: 20px;
 }
