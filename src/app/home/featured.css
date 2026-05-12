@@ -5,11 +5,10 @@
 
 .featured-brands {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 .featured-image {
-    margin-right: 3rem;
-    margin-left: 3rem;
-    width: 20vw;
-    height: 20vh;
+    padding: 0rem 3rem;
+    width: 15vw;
+    height: 15vh;
 }

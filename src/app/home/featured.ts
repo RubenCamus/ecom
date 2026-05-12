@@ -9,10 +9,10 @@ import { Component } from "@angular/core";
             <h2>Featured On</h2>
         </div>
         <div class="featured-brands">
-            <img class="featured-image" src="https://static.photos/640x360/90" alt="brand">
-            <img class="featured-image" src="https://static.photos/640x360/94" alt="brand">
-            <img class="featured-image" src="https://static.photos/640x360/190" alt="brand">
-            <img class="featured-image" src="https://static.photos/640x360/20" alt="brand">
+            <img class="featured-image" src="fujitsu-logo.svg" alt="brand">
+            <img class="featured-image" src="dhl-logo.svg" alt="brand">
+            <img class="featured-image" src="diamon-logo.svg" alt="brand">
+            <img class="featured-image" src="motul-logo.svg" alt="brand">
         </div>
     </div>`,
     styleUrl: './featured.css',
