@@ -1,8 +1,20 @@
+input {
+    border-radius: 4px;
+    border: 1px solid grey;
+    height: 2rem;
+    width: 100%;
+}
+.screen-wrapper {
+    display: flex;
+    height: 100vh;
+}
 .login-wrapper {
     padding: 2rem 2rem;
-    width: 60vw; 
+    width: 40vw; 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Outfit', sans-serif;
 }
 .welcome-wrapper {
@@ -13,7 +25,9 @@
 .welcome-wrapper h2 { 
     padding: 1rem 0 0 0;
     margin: 0;
-    font-size: 32px;
+    font-size: 24px;
+    text-transform:none;
+    font-weight: 300;
 }
 .input-wrapper {
     padding: 0.5rem 0rem;
@@ -21,17 +35,40 @@
     display: flex;
     flex-direction: column;
 }
-
+.input-wrapper label{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
 .password-wrapper {
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
 }
-#login-button {
-    align-self: center;
-    margin: 1rem 0;
-    width: 5rem;
+.button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-#signup-span {
-    align-self: center;
+#signup-button {
+    border-radius: 60px;
+    width: 50%;
+    height: 2.5rem;
+    text-transform: none;
+}
+#login-button {
+    margin-top: 1rem;
+    border-radius: 60px;
+    width: 50%;
+    height: 2.5rem;
+    text-transform: none;
+}
+#login-span {
+    padding: 0px 0px;
+}
+
+#background-image {
+    margin: 0;
+    padding: 0;
+    max-width: max-content;
+    max-height: max-content;
 }
