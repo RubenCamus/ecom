@@ -1,0 +1,72 @@
+.page-wrapper {
+    font-family: 'Outfit', sans-serif;
+}
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 10rem;
+}
+.form-wrapper input {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+
+.title-wrapper {
+    padding: 1rem 10rem 0;
+    font-family: 'Outfit', sans-serif;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.social-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.social-wrapper * {
+    padding: 0.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.5rem;
+    align-self: center;
+}
+.socials-text { 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.interaction-wrapper {
+    width: 60vw;
+}
+
+
+
+
+
+#send-button {
+    background-color: rgb(211, 0, 0);
+    color: white;
+    text-align: center;
+    border: none;
+    width: 50%;
+    font-weight: bold;
+    border-radius: 2px;
+    align-self: center;
+}
+#send-button:hover {
+    background-color: black;
+    cursor: pointer;
+}
+#form-textarea {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}

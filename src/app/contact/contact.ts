@@ -3,7 +3,8 @@ import { Component } from "@angular/core";
 
 @Component ({
     selector: 'contact',
-    template: ` <h1>Contact</h1>`,
+    templateUrl:'./contact.html',
+    styleUrl: 'contact.css'
 })
 
 export class Contact {}
