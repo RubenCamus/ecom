@@ -11,10 +11,6 @@ import { CartService } from "../services/cart-service";
         <logo/>
         <ul>
             <li>
-                <a class="arrow-button dropdown"><img class="arrow-button" src="/triangle-down.svg" alt="trianglebutton"></a>
-                <a class="nav-link" routerLink="">Home</a>
-            </li>
-            <li>
                 <div class="dropdown">
                     <a><img (click)="myFunction()" class="arrow-button" src="/triangle-down.svg" alt="trianglebutton"></a>
                     <a class="nav-link" routerLink="products">Products & Services</a>
