@@ -12,7 +12,7 @@ import { CartService } from "../services/cart-service";
         <ul>
             <li>
                 <div class="dropdown">
-                    <a><img (click)="myFunction()" class="arrow-button" src="/triangle-down.svg" alt="trianglebutton"></a>
+                    <img (click)="myFunction()" class="arrow-button" src="/triangle-down.svg" alt="trianglebutton"> 
                     <a class="nav-link" routerLink="products">Products & Services</a>
                     <div id="my-dropdown" class="dropdown-content">
                         <a href="">Collection 1</a>
@@ -92,15 +92,15 @@ import { CartService } from "../services/cart-service";
     }
     .dropdown {
         position: relative;
-        display: inline-block;
+        display: flex;
         align-items: center;
-        justify-content: center;
     }
     .dropdown-content {
         display: none;
         flex-direction: column;
         position: absolute;
         background-color: #f1f1f1;
+        margin-top: 8rem;
         padding: 10px 10px;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba($color: #000000, $alpha: 0.2);
