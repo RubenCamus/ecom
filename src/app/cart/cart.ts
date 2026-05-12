@@ -12,7 +12,19 @@ import { CartService } from "../services/cart-service";
             </div>
             <div class="products">    
                 <div class="product-wrapper">
-                    <p>{{cartService.getProduct(1).name}}</p> <span>Quantity: {{cartService.getProduct(1).quantity}}</span><button class="button1" (click)="cartService.addToCart({id: 1,name: 'Camiseta roja', price: 10})">Add Item</button> <button class="button1" (click)="cartService.removeProduct({id: 1,name: 'Camiseta roja', price: 10})">Remove Item</button>
+                    <div class="trash-wrapper">
+                        <img class="trash-icon" src="trash-icon.svg" alt="trash icon">
+                    </div>
+                    <div class="product-content-wrapper">
+                        <p>Product Name</p>
+                        <span>Price</span>
+                        <div class="amount-wrapper">
+                            <img class="amount-icon" src="minus-icon.svg" alt="minus icon">
+                            <span>0</span>
+                            <img class="amount-icon" src="add-icon.svg" alt="add icon">
+                        </div>
+                    </div>
+                    <img src="product-image" alt="product image">
                 </div>
                 <div class="product-wrapper">
                     <p>{{cartService.getProduct(2).name}}</p> <span>Quantity: {{cartService.getProduct(2).quantity}}</span><button class="button1" (click)="cartService.addToCart({id: 2,name: 'Camiseta verde', price: 5})">Add Item</button> <button class="button1" (click)="cartService.removeProduct({id: 2,name: 'Camiseta verde', price: 5})">Remove Item</button>
@@ -37,6 +49,6 @@ export class Cart {
     clicked() {
         this.close.emit();
     }
-
+    
     cartService = inject(CartService);
 }
