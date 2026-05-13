@@ -1,0 +1,7 @@
+.page-wrapper {
+    display: flex;
+}
+.content-wrapper {
+    width: 50%;
+    margin: auto;
+}

@@ -23,14 +23,13 @@
 .cart-top-container { 
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid rgb(97, 97, 97);
+    text-align: center;
+    align-items: center;
 }
 .cart-close-button {
-    width: 1.5rem;
-    height: 1.5rem;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    font-size: 20px;
+    font-size: 24px;
 }
 .cart-close-button:hover {
     cursor: pointer;
@@ -47,7 +46,7 @@
     flex-direction: column;
 }
 .products { 
-    margin: 0;
+    margin-top: 1rem;
     padding: 0;
 }
 .total-wrapper {
@@ -55,9 +54,12 @@
     justify-content: space-between;
 }
 .bottom-container {
-    padding-top: 1rem;
+    margin-top: 0rem;
+    padding-top: 0rem;
     display: flex;
     flex-direction: column;
+    height: 80%;
+    justify-content: end;
     border-top: 1px solid rgb(97, 97, 97);
 
 }

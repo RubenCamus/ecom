@@ -3,8 +3,25 @@ import { Component } from "@angular/core";
 @Component ({
     selector: 'about',
     template: `
-    <h1>About</h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit lacus augue, vitae tincidunt sapien tempor eu. Ut rhoncus et libero quis maximus. Fusce nec lectus non est vestibulum gravida id non elit. Suspendisse sed nisi facilisis, auctor turpis et, semper nibh. Mauris ut ex sollicitudin quam condimentum blandit. Aliquam vestibulum efficitur urna. Morbi egestas orci in odio ultricies ullamcorper. Curabitur ornare tortor eget scelerisque imperdiet. Aenean laoreet lectus euismod neque hendrerit vestibulum. Sed quis metus non eros dictum pellentesque id at diam. Cras eget purus a libero finibus dignissim ac non augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.Nullam dignissim dolor quis ex varius, vel mattis eros scelerisque. Donec cursus ultrices nunc, vel convallis arcu ultricies sit amet. Donec tempus imperdiet aliquam. Vestibulum nec tellus dui. Pellentesque eu nunc velit. Nam id arcu nisi. Vestibulum nec metus mi. In auctor augue felis, vitae cursus turpis fermentum at. </p>`,
+    <div class="page-wrapper">
+        <div class="content-wrapper">
+            <h1>What about BusinessName?</h1>
+            <p>
+                BusinessDescription
+            </p>
+            <h2>We love X that's why we carefully create Y</h2>
+            <p>
+                Why we make this
+            </p>
+            <img src="" alt="development image">
+            <h2>Who are we</h2>
+            <p>
+                AboutUsDescription
+            </p>
+        </div>
+    </div>
+    `,
+    styleUrl: 'about.css',
 })
 
 export class About {}

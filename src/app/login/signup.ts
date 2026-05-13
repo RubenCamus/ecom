@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import { RouterLink } from "@angular/router";
 
 
@@ -17,10 +17,10 @@ import { RouterLink } from "@angular/router";
                     <input type="email" name="email" required>
 \
                     <label for="psw">Password</label>
-                    <input type="password" name="psw" required>
+                    <input type="password" name="psw" id="psw" required>
 
                     <label for="psw-repeat">Confirm Password</label>
-                    <input type="password" name="psw-repeat" required>
+                    <input type="password" name="psw-repeat" id="psw-repeat" required>
                     <p>By creating an account you agree to our <a href="">Terms & Privacy</a></p>
                     <div class="button-wrapper">
                         <button id="signup-button">Sign Up</button>
@@ -37,5 +37,4 @@ import { RouterLink } from "@angular/router";
 })
 
 export class SignUp {
-
 }
