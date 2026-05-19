@@ -16,7 +16,7 @@ import { Component } from "@angular/core";
             <img src="" alt="development image">
             <h2>Who are we</h2>
             <p>
-                AboutUsDescription
+                At <strong>{{business.name}}</strong> {{business.about}}
             </p>
         </div>
     </div>
@@ -24,4 +24,12 @@ import { Component } from "@angular/core";
     styleUrl: 'about.css',
 })
 
-export class About {}
+export class About {
+  business: any = 
+    {
+        name: 'Velore Essentials',
+        description: "is a dedicated company focused on delivering high-quality products and exceptional customer service. We specialize in providing reliable solutions tailored to meet the needs of our clients, combining professionalism, innovation, and attention to detail. Our mission is to create lasting value through excellence, integrity, and a commitment to customer satisfaction.",
+        about: 'we believe everyday care should feel simple, natural, and reliable. Our mission is to create high-quality products that support comfort, wellness, and confidence in your daily routine.'
+    }
+
+}

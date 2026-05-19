@@ -10,7 +10,7 @@ import { Reviews } from './reviews';
       <div class="landing-container">
         <h2 style="font-size: 48px;">40% OFF</h2>
         <p>Lorem ipsum dolor sit amet</p>
-        <button routerLink="products" class="primary">SHOP NOW</button>
+        <button routerLink="products" class="landing-button">SHOP NOW</button>
       </div>
       <div>
         <img class="landing-image" src="/landingHero.png" alt="landing-image" />

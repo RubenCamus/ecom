@@ -13,11 +13,34 @@ body {
   font-weight: 400;
   font-style: italic;
 }
-
-.button1 {
+.btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.25rem 0.5rem;
+  border: none;
   border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.primary-button {
   background-color: #574545;
   color: white;
+}
+.secondary-button {
+  background-color: #ffdb9e;
+  color: black;
+  cursor: pointer;
 }
 .primary {
   border-radius: 5px;

@@ -1,9 +1,20 @@
-.products-container { 
-    padding-left: 2rem;
+@import 'productdisplay.css';
+
+
+.products-container {
+  padding-left: 1rem;
 }
-.products-display { 
-    display: flex;
+.products-wrapper {
+  display: flex;
 }
-product-display { 
-    padding: 5px;
+.products-display {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(280px, 1fr));
+  gap: 0rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+product-display {
+  margin: auto;
+  padding: 5px;
 }

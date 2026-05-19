@@ -25,10 +25,12 @@
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  width: 24rem;
+  width: 10rem;
   height: 12rem;
 }
+
 .reviews-image {
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
@@ -42,6 +44,7 @@
 }
 .reviews-text {
   margin-left: 20px;
+  margin-right: 20px;
   display: vertical;
   color: rgb(0, 0, 0);
 }
