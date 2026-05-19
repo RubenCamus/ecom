@@ -37,7 +37,6 @@ export class CartService {
   parseCart() { 
     var cart = this.getCart()
     if (cart == null) {
-      console.log('Cart is empty')
       return [];
     } 
     var cartObject = JSON.parse(cart);

@@ -14,18 +14,16 @@
 }
 .reviews-item {
   background-color: rgb(255, 255, 255);
-  width: fit-content;
-  height: fit-content;
+  width: 50%;
+  height: 250px;
   display: flex;
   margin-right: 10px;
-  width: 50%;
-  height: 15rem;
 }
 .reviews-image-container {
   margin-top: 1rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  width: 10rem;
+  width: 12rem;
   height: 12rem;
 }
 
