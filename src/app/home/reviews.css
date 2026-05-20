@@ -54,3 +54,8 @@
   background-color: #5d3f3d;
   color: white;
 }
+
+.review-star {
+  width: 36px;
+  height: 36px;
+}

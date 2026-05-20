@@ -21,7 +21,7 @@ import { CartService } from '../../services/cart-service';
                 <div class="button-div">
                   <button
                     class="btn primary-button add-to-cart"
-                    (click)="cartService.addToCart(product.id)"
+                    (click)="cartService.addToCart(product)"
                   >
                     Add to cart
                   </button>

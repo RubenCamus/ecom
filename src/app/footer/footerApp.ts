@@ -6,9 +6,15 @@ import { Component } from '@angular/core';
     <footer>
       <div class="group-a">
         <div class="socials-wrapper">
-          <a href=""><img src="" alt="Twitter Logo" /></a>
-          <a href=""><img src="" alt="Instagram Logo" /></a>
-          <a href=""><img src="" alt="Facebook Logo" /></a>
+          <a href="https://www.twitter.com/{{ twitter }}"
+            ><img class="social-logo" src="twitter-logo.svg" alt="Twitter Logo"
+          /></a>
+          <a href="instagram.com"
+            ><img class="social-logo" src="instagram-fill.svg" alt="Instagram Logo"
+          /></a>
+          <a href="facebook.com"
+            ><img class="social-logo" src="facebook-logo.svg" alt="Facebook Logo"
+          /></a>
           <a href="">#TestShop</a>
         </div>
         <div class="policies-wrapper">
@@ -44,4 +50,6 @@ import { Component } from '@angular/core';
   `,
   styleUrl: './footerApp.css',
 })
-export class FooterApp {}
+export class FooterApp {
+  twitter = 'ElonMusk';
+}

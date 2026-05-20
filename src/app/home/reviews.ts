@@ -17,10 +17,14 @@ import { RouterLink } from '@angular/router';
             </div>
             <div class="reviews-text">
               <h2>{{ review.name }}</h2>
-              <p>{{ review.stars }}</p>
+              <div style="display: flex;">
+                @for (i of [].constructor(review.stars); track $index) {
+                  <img src="star.png" alt="star" class="review-star" />
+                }
+              </div>
               <p>{{ review.description }}</p>
               <p>{{ review.user }}</p>
-              <button class="secondary-button" routerLink="/categories/{{ review.category }}">
+              <button class="btn secondary-button" routerLink="/categories/review.category">
                 Browse Product Category
               </button>
             </div>

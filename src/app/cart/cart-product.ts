@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 
 @Component ({
@@ -9,20 +9,23 @@ import { Component } from "@angular/core";
             <img class="trash-icon" src="trash-icon.svg" alt="trash icon">
         </div>
         <div class="product-content-wrapper">
-            <p>Product Name</p>
-            <span>Price</span>
+            <p>{{productName}}</p>
+            <span>{{price}}</span>
             <div class="amount-wrapper">
                 <img class="amount-icon" src="minus-icon.svg" alt="minus icon">
-                <span>0</span>
+                <span>{{quantity}}</span>
                 <img class="amount-icon" src="add-icon.svg" alt="add icon">
             </div>
         </div>
-        <img src="product-image" alt="product image">
+        <img class="product-image" src="{{image}}" alt="product image">
     </div>
-                `,
+`,
     styleUrl: 'cart.css'
 })
 
 export class CartProduct {
-
+    @Input() productName = '';
+    @Input() price = 0;
+    @Input() quantity = 0;
+    @Input() image: any;
 }
