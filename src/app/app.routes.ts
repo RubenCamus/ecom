@@ -11,6 +11,7 @@ import { AuthLayout } from './layouts/authLayout';
 import { ShampooCategory } from './categories/shampoo-category';
 import { CategoriesLayout } from './layouts/categoriesLayout';
 import { CreamsCategory } from './categories/creams-category/creams-category';
+import { LoginForm } from './login-form/login-form';
 const titleResolver: ResolveFn<string> = (route) => route.queryParams['id'];
 
 export const routes: Routes = [
@@ -56,7 +57,7 @@ export const routes: Routes = [
       },
       {
         path: 'signup',
-        component: SignUp,
+        component: LoginForm,
         title: titleResolver,
       },
     ],
