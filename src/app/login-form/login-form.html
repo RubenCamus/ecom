@@ -1,0 +1,25 @@
+<div class="screen-wrapper">
+  <form [formGroup]="formData" (ngSubmit)="handleSubmit()">
+    <div class="login-wrapper">
+      <div class="welcome-wrapper">
+        <h2>Create an account</h2>
+      </div>
+
+      <div class="input-wrapper">
+        <label for="email"> Email <input type="text" formControlName="email" /> </label>
+        <label for="psw"> password <input type="password" formControlName="psw" /> </label>
+        <label for="psw-repeat">
+          Repeat password
+          <input type="password" formControlName="pswRepeat" />
+        </label>
+        <div class="button-wrapper">
+          <button [disabled]="!formData.valid" type="submit">Submit</button>
+        </div>
+        <label id="signup-span"
+          >Don't have an account? <a routerLink="/auth/login">Sign Up</a></label
+        >
+      </div>
+    </div>
+  </form>
+  <img id="background-image" src="/login-bg.jpg" alt="background" />
+</div>
