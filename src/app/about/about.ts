@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         <p>
           {{ business.description }}
         </p>
-        <h2>We love X that's why we carefully create Y</h2>
+        <h2>We love personal care</h2>
         <p>
           We created {{ business.name }} to offer products people can trust every day. Our goal is
           to combine quality, comfort, and care into simple solutions that make daily life healthier

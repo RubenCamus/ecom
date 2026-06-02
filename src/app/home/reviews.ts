@@ -24,7 +24,7 @@ import { RouterLink } from '@angular/router';
               </div>
               <p>{{ review.description }}</p>
               <p>{{ review.user }}</p>
-              <button class="btn secondary-button" routerLink="/categories/review.category">
+              <button class="btn secondary-button" routerLink="/categories/{{ review.category }}">
                 Browse Product Category
               </button>
             </div>
@@ -45,7 +45,7 @@ export class Reviews {
       description:
         'This shampoo is gentle yet effective, leaving hair feeling clean without stripping natural oils.',
       user: 'Daniel',
-      category: 'Shampoo',
+      category: 'shampoo',
       image: 'shampooImage.jpg',
     },
     {
@@ -55,7 +55,7 @@ export class Reviews {
       description:
         'This cream delivers deep hydration without feeling heavy or greasy. It absorbs quickly into the skin, leaving a soft, plump finish.',
       user: 'Chris Amber',
-      category: 'Creams',
+      category: 'creams',
       image: 'facialcream.jpg',
     },
   ];

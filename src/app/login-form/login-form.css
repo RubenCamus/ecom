@@ -72,3 +72,14 @@ input {
   max-width: max-content;
   max-height: max-content;
 }
+
+.passwords-validators {
+  display: flex;
+}
+
+.passwords-match p {
+  color: red;
+}
+.passwords-requirements p {
+  color: red;
+}
