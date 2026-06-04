@@ -1,59 +1,19 @@
 # Ecom
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
+This is my ecommerce website made with Angular.
 
-## Development server
+I learnt about:
+## Nested routing
+In order to create advanced routes for products categories and sub categories or Ids I had to use nested routing with child routes. This is also useful when creating different routes for other necessities like authentication.
+## Reactive Forms
+Reactive Forms are a strong way to handle user input and form validation. They are great to validate data and are more reusable and scalable.
+## Custom form validators
+Custom validators allowed me to create validation rules which were not available by default. This helped me create password requirements and check match input validation.
+## CLI
+One of the most powerful tools Angular offers the commands that help creating a structure and scalable app, it is a must use for creating components, directives, injections, validators ...
+## Dependency Injection (DI)
+Dependency Injection help creating reusable logic for the app, I created the cart logic with injection, reading and writing from LocalStorage when needed across pages thanks to DI.
+## Signals
+Signals are really powerful when it comes to updating the UI automatically, they detect when a change happens and emit a signal to the related ui components and updates them in real time.
 
-To start a local development server, run:
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
