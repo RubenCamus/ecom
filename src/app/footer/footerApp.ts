@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
       <div class="group-a">
         <div class="socials-wrapper">
           <a href="https://www.twitter.com/{{ twitter }}"
-            ><img class="social-logo" src="twitter-logo.svg" alt="Twitter Logo"
+            ><img class="social-logo" src="/twitter-logo.svg" alt="Twitter Logo"
           /></a>
           <a href="instagram.com"
-            ><img class="social-logo" src="instagram-fill.svg" alt="Instagram Logo"
+            ><img class="social-logo" src="/instagram-fill.svg" alt="Instagram Logo"
           /></a>
           <a href="facebook.com"
-            ><img class="social-logo" src="facebook-logo.svg" alt="Facebook Logo"
+            ><img class="social-logo" src="/facebook-logo.svg" alt="Facebook Logo"
           /></a>
           <a href="">#TestShop</a>
         </div>

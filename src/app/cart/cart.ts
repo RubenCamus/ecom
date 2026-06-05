@@ -12,7 +12,12 @@ import { CartProduct } from './cart-product';
       </div>
       <div class="products">
         @for (product of cartContent; track product.id) {
-        <cart-product [productName]="product.name" [price]="product.price" [quantity]="product.quantity" [image]="product.image"></cart-product>
+          <cart-product
+            [productName]="product.name"
+            [price]="product.price"
+            [quantity]="product.quantity"
+            [image]="product.image"
+          ></cart-product>
         }
       </div>
       <div class="bottom-container">

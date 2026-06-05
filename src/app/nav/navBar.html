@@ -1,0 +1,30 @@
+<nav>
+  <div class="hamburger-wrapper">
+    <img class="icon" src="/menu-hamburger.svg" alt="hamburger menu" />
+  </div>
+  <div class="logo-wrapper">
+    <logo />
+  </div>
+  <ul>
+    <li>
+      <div class="dropdown">
+        <a class="nav-link" routerLink="/products" id="products">Products & Services</a>
+        <div id="my-dropdown" class="dropdown-content">
+          <a routerLink="/categories/shampoo">Shampoo</a>
+          <a routerLink="/categories/creams">Creams</a>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a class="nav-link" routerLink="/contact">Contact</a>
+    </li>
+    <li>
+      <a class="nav-link" routerLink="/about">About Us</a>
+    </li>
+  </ul>
+  <div class="icons-div">
+    <img class="icon" (click)="onClick()" src="/shopping-cart.svg" alt="shopping-cart" />
+    <p style="color: red">{{ cartService.parseCart()?.length }}</p>
+    <img routerLink="auth/login" class="icon" src="/person-icon.svg" alt="profile-icon" />
+  </div>
+</nav>
