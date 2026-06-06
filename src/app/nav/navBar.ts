@@ -3,11 +3,11 @@ import { NgOptimizedImage } from '@angular/common';
 import { Logo } from '../logo';
 import { RouterLink, Scroll } from '@angular/router';
 import { CartService } from '../services/cart-service';
-
+import { NavBarMobile } from './navBarMobile';
 @Component({
   selector: 'nav-bar',
   templateUrl: 'navBar.html',
-  imports: [Logo, RouterLink],
+  imports: [Logo, RouterLink, NavBarMobile],
   styleUrl: './navBar.css',
 })
 export class NavBar {
@@ -17,8 +17,4 @@ export class NavBar {
     this.toggle.emit();
   }
   cartService = inject(CartService);
-
-  myFunction() {
-    document.getElementById('my-dropdown')?.classList.toggle('show');
-  }
 }
