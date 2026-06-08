@@ -1,9 +1,9 @@
 .cart-container {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 40vw;
-  height: 100vh;
+  right: -100%;
+  width: min(30em, 90%);
+  height: 100dvh;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 5% 75% 20%;
@@ -13,6 +13,23 @@
   z-index: 3;
   padding: 1rem 1rem;
   box-shadow: 2px 0px 15px 1px #442424;
+  transition: right 400ms ease;
+}
+
+#cart-overlay {
+  display: none;
+  visibility: hidden;
+}
+#cart-overlay.show {
+  display: block;
+  visibility: visible;
+  inset: 0;
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#cart.show {
+  right: 0;
 }
 .cart-title {
   color: black;

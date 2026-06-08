@@ -8,10 +8,4 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   template: ` <router-outlet /> `,
   styleUrls: ['./app.css'],
 })
-export class App {
-  mostrarCarrito = false;
-
-  toggleCart() {
-    this.mostrarCarrito = !this.mostrarCarrito;
-  }
-}
+export class App {}

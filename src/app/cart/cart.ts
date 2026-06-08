@@ -5,10 +5,10 @@ import { CartProduct } from './cart-product';
 @Component({
   selector: 'cart',
   template: `
-    <div class="cart-container">
+    <div class="cart-container" id="cart">
       <div class="cart-top-container">
         <h2 class="cart-title">Your Cart</h2>
-        <button (click)="clicked()" class="cart-close-button">X</button>
+        <button (click)="closeBtn()" class="cart-close-button">X</button>
       </div>
       <div class="products">
         @for (product of cartContent; track product.id) {
@@ -29,6 +29,7 @@ import { CartProduct } from './cart-product';
         <img src="" alt="" />
       </div>
     </div>
+    <div (click)="closeBtn()" id="cart-overlay"></div>
   `,
   imports: [CartProduct],
   styleUrl: './cart.css',
@@ -36,7 +37,7 @@ import { CartProduct } from './cart-product';
 export class Cart {
   @Output() close = new EventEmitter<void>();
 
-  clicked() {
+  closeBtn() {
     this.close.emit();
   }
 

@@ -19,9 +19,7 @@ import { inject } from '@angular/core/primitives/di';
       <section class="content">
         <router-outlet />
       </section>
-      @if (mostrarCarrito) {
-        <cart (close)="toggleCart()" />
-      }
+      <cart (close)="toggleCart()" />
     </main>
     <footer-app />
   `,
@@ -36,6 +34,8 @@ export class MainLayout {
 
   mostrarCarrito = false;
   toggleCart() {
-    this.mostrarCarrito = !this.mostrarCarrito;
+    document.getElementById('cart')?.classList.toggle('show');
+    document.getElementById('cart-overlay')?.classList.toggle('show');
+    // this.mostrarCarrito = !this.mostrarCarrito;
   }
 }
