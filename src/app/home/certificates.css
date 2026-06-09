@@ -38,3 +38,28 @@
   height: 50px;
   width: 50px;
 }
+
+@media screen and (max-width: 950px) {
+  .certificate-text-wrapper {
+    padding: 0;
+  }
+  .certificate-text-wrapper p {
+    display: none;
+    visibility: hidden;
+  }
+  .certificates-bar {
+    padding: 0.5em 0.5em;
+    width: 100dvw;
+  }
+  .certificate-image {
+    width: min(5vw, 3em);
+    height: min(5vw, 3em);
+  }
+  .certificate-box {
+    padding: 0;
+  }
+  .certificate-title {
+    font-size: min(5vw, 1.5em);
+    padding: 0.5em 0em;
+  }
+}

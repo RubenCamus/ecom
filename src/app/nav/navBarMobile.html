@@ -3,9 +3,9 @@
   <div id="nav-dropdown">
     <button class="btn-dropdown" (click)="closeMobileDropdown()">X</button>
     <div class="links-dropdown">
-      <a routerLink="/products">Products</a>
-      <a routerLink="/contact">Contact</a>
-      <a routerLink="/about">About us</a>
+      <a (click)="closeMobileDropdown()" routerLink="/products">Products</a>
+      <a (click)="closeMobileDropdown()" routerLink="/contact">Contact</a>
+      <a (click)="closeMobileDropdown()" routerLink="/about">About us</a>
     </div>
   </div>
 </div>

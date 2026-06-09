@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'nav-bar-mobile',
   templateUrl: 'navBarMobile.html',
   styleUrl: 'navBar.css',
+  imports: [RouterLink],
 })
 export class NavBarMobile {
   openMobileDropdown() {
