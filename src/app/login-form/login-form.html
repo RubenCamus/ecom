@@ -1,49 +1,42 @@
 <div class="screen-wrapper">
-  <form [formGroup]="formData" (ngSubmit)="handleSubmit()">
-    <div class="login-wrapper">
-      <a routerLink="/"><img width="100px" src="/favicon.ico" alt="logo" /></a>
+  <div class="content-wrapper">
+    <form [formGroup]="formData" (ngSubmit)="handleSubmit()">
       <div class="welcome-wrapper">
+        <a routerLink="/"><img width="100px" src="/favicon.ico" alt="logo" /></a>
         <h2>Create an account</h2>
       </div>
-
       <div class="input-wrapper">
-        <label for="email"> Email <input type="text" formControlName="email" /> </label>
+        <label for="email"> Email </label>
+        <input type="text" formControlName="email" />
         @if (email?.invalid && (email?.dirty || email?.touched)) {
         <span>Email not valid</span>
         }
-        <label for="psw"> password <input type="password" formControlName="psw" /> </label>
-        <div class="passwords-validators">
-          @if (psw?.invalid && (psw?.dirty || psw?.touched)) { @if
-          (psw?.hasError('passwordStrength')) {
-          <span> Password must contain: 1 uppercase, 1 lowercase and 1 number.</span>
-          } @if (psw?.hasError('minlength') || psw?.hasError('maxlength')) {
-          <span>Password length must be between 8 and 24 characters.</span>
-          }
-          <!--<div class="passwords-requirements">
-            <p>
-              Password minimum requirements are: Between 8 and 24 characters, 1 uppercase, 1
-              lowercase and 1 number.
-            </p>
-          </div>-->
-          }
-        </div>
-        <label for="psw-repeat">
-          Repeat password
-          <input type="password" formControlName="pswRepeat" />
-        </label>
-        @if (formData.hasError('passwordNotMatch')) {
-        <div class="passwords-match">
-          <p>Passwords don't match</p>
-        </div>
-        }
-        <div class="button-wrapper">
-          <button [disabled]="!formData.valid" type="submit">Submit</button>
-        </div>
-        <label id="login-span"
-          >Already have an account? <a routerLink="/auth/login">Log in</a></label
-        >
       </div>
-    </div>
-  </form>
-  <img id="background-image" src="/login-bg.jpg" alt="background" />
+      <div class="input-wrapper">
+        <label for="psw"> Password </label>
+        <input type="password" formControlName="psw" />
+      </div>
+      <div class="passwords-validators">
+        @if (psw?.invalid && (psw?.dirty || psw?.touched)) { @if (psw?.hasError('passwordStrength'))
+        {
+        <span> Password must contain: 1 uppercase, 1 lowercase and 1 number.</span>
+        } @if (psw?.hasError('minlength') || psw?.hasError('maxlength')) {
+        <span>Password length must be between 8 and 24 characters.</span>
+        } }
+      </div>
+      <div class="input-wrapper">
+        <label for="psw-repeat"> Repeat password </label>
+        <input type="password" formControlName="pswRepeat" />
+      </div>
+      @if (formData.hasError('passwordNotMatch')) {
+      <div class="passwords-match">
+        <p>Passwords don't match</p>
+      </div>
+      }
+      <div class="button-wrapper">
+        <button [disabled]="!formData.valid" type="submit">Submit</button>
+      </div>
+      <label id="login-span">Already have an account? <a routerLink="/auth/login">Log in</a></label>
+    </form>
+  </div>
 </div>

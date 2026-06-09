@@ -57,7 +57,7 @@ export const routes: Routes = [
       },
       {
         path: 'signup',
-        component: LoginForm,
+        component: SignUp,
         title: titleResolver,
       },
     ],

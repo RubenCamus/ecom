@@ -7,7 +7,7 @@ import { RouterLink } from '@angular/router';
   selector: 'app-login-form',
   imports: [ReactiveFormsModule, RouterLink],
   templateUrl: './login-form.html',
-  styleUrl: './login-form.css',
+  styleUrl: '../login/signup.css',
 })
 export class LoginForm {
   formData = new FormGroup(

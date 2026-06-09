@@ -127,7 +127,7 @@ nav-bar-mobile {
     visibility: visible;
   }
   nav {
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     width: 100dvw;
     z-index: 5;

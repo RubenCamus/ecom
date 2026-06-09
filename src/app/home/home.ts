@@ -8,11 +8,11 @@ import { Reviews } from './reviews';
   template: `
     <div class="landing">
       <div class="landing-container">
-        <h2 style="font-size: 48px;">40% OFF</h2>
+        <h2>40% OFF</h2>
         <p>Lorem ipsum dolor sit amet</p>
         <button routerLink="products" class="landing-button">SHOP NOW</button>
       </div>
-      <div>
+      <div class="bg-image">
         <img class="landing-image" src="/landingHero.png" alt="landing-image" />
       </div>
     </div>
