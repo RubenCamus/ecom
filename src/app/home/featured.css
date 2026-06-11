@@ -1,14 +1,25 @@
 .featured-head {
-    text-align: center;
-    margin-bottom: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .featured-brands {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .featured-image {
-    padding: 0rem 3rem;
-    width: 15vw;
-    height: 15vh;
+  padding: 0rem 3rem;
+  width: 15vw;
+  height: 15vh;
+}
+@media screen and (max-width: 950px) {
+  .featured-image {
+    width: 50vw;
+    padding: 0 0.5em;
+  }
+  .featured-brands {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }

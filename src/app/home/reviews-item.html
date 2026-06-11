@@ -1,0 +1,16 @@
+<div class="reviews-image-container">
+  <img class="reviews-image" src="{{ curReview.image }}" alt="product image" />
+</div>
+<div class="reviews-text">
+  <h2>{{ curReview.name }}</h2>
+  <div style="display: flex">
+    @for (i of [].constructor(curReview.stars); track $index) {
+    <img src="star.png" alt="star" class="review-star" />
+    }
+  </div>
+  <p>{{ curReview.description }}</p>
+  <p>{{ curReview.user }}</p>
+  <button class="btn secondary-button" routerLink="/categories/{{ curReview.category }}">
+    Browse Product Category
+  </button>
+</div>

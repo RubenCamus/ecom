@@ -1,42 +1,23 @@
-import { Component } from '@angular/core';
+import { Component, DestroyRef } from '@angular/core';
 import { ReviewsItem } from './reviews-item';
 import { RouterLink } from '@angular/router';
-
+import { BreakpointObserver, LayoutModule } from '@angular/cdk/layout';
 @Component({
   selector: 'reviews',
-  template: ` <div class="reviews-container">
-    <div class="reviews-head">
-      <h2 id="reviews-title">Customer Top Picks</h2>
-    </div>
-    <div class="reviews-box">
-      <ul class="reviews-list">
-        @for (review of reviews; track review.id) {
-          <li class="reviews-item">
-            <div class="reviews-image-container">
-              <img class="reviews-image" src="{{ review.image }}" alt="product image" />
-            </div>
-            <div class="reviews-text">
-              <h2>{{ review.name }}</h2>
-              <div style="display: flex;">
-                @for (i of [].constructor(review.stars); track $index) {
-                  <img src="star.png" alt="star" class="review-star" />
-                }
-              </div>
-              <p>{{ review.description }}</p>
-              <p>{{ review.user }}</p>
-              <button class="btn secondary-button" routerLink="/categories/{{ review.category }}">
-                Browse Product Category
-              </button>
-            </div>
-          </li>
-        }
-      </ul>
-    </div>
-  </div>`,
+  templateUrl: 'reviews.html',
   styleUrl: './reviews.css',
   imports: [ReviewsItem, RouterLink],
 })
 export class Reviews {
+  constructor(
+    private breakpointObserver: BreakpointObserver,
+    private destroyRef: DestroyRef,
+  ) {}
+  ngOnInit() {
+    var isMobile = this.breakpointObserver.isMatched('(max-width: 950px)');
+  }
+  isMobile = true;
+  currentIndex = 0;
   reviews: any = [
     {
       id: 1,
@@ -59,4 +40,5 @@ export class Reviews {
       image: 'facialcream.jpg',
     },
   ];
+  currentReview = this.reviews[this.currentIndex];
 }
