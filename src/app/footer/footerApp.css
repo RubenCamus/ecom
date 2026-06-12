@@ -48,3 +48,11 @@ footer {
   width: 48px;
   height: 48px;
 }
+
+@media screen and (max-width: 950px) {
+  /*TODO anadir desplegable de stores*/
+  .group-b {
+    display: none;
+    visibility: hidden;
+  }
+}

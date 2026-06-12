@@ -1,7 +1,8 @@
 import { Component, DestroyRef } from '@angular/core';
 import { ReviewsItem } from './reviews-item';
 import { RouterLink } from '@angular/router';
-import { BreakpointObserver, LayoutModule } from '@angular/cdk/layout';
+import { BreakpointObserver } from '@angular/cdk/layout';
+import { inject } from '@angular/core/primitives/di';
 @Component({
   selector: 'reviews',
   templateUrl: 'reviews.html',
@@ -9,14 +10,19 @@ import { BreakpointObserver, LayoutModule } from '@angular/cdk/layout';
   imports: [ReviewsItem, RouterLink],
 })
 export class Reviews {
-  constructor(
-    private breakpointObserver: BreakpointObserver,
-    private destroyRef: DestroyRef,
-  ) {}
+  bpoint950px = '(max-width: 950px)';
+  constructor(private observer: BreakpointObserver) {}
+  protected isMobile = false;
   ngOnInit() {
-    var isMobile = this.breakpointObserver.isMatched('(max-width: 950px)');
+    this.observer.observe(this.bpoint950px).subscribe((result) => {
+      if (result.matches) {
+        this.isMobile = true;
+      } else if (!result.matches) {
+        this.isMobile = false;
+      }
+      console.log(result);
+    });
   }
-  isMobile = true;
   currentIndex = 0;
   reviews: any = [
     {
