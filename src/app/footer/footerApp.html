@@ -1,0 +1,56 @@
+<footer>
+  @if (!storesMenu) {
+  <div class="group-b">
+    <h2 (click)="storesMenu = true">See store locations</h2>
+  </div>
+  <div class="group-a" id="info">
+    <div class="policies-wrapper">
+      <a href="">Home</a>
+      <a href="">About Us</a>
+      <a href="">Work With Us</a>
+      <a href="">Customer Service</a>
+      <a href="">Gift Cards</a>
+      <a href="">Contact Us</a>
+      <a href="">Sign Up</a>
+      <a href="">Order Tracking</a>
+      <a href="">Return Policy</a>
+    </div>
+    <div class="socials-wrapper">
+      <a href="https://www.twitter.com/{{ twitter }}"
+        ><img class="social-logo" src="/twitter-logo.svg" alt="Twitter Logo"
+      /></a>
+      <a href="instagram.com"
+        ><img class="social-logo" src="/instagram-fill.svg" alt="Instagram Logo"
+      /></a>
+      <a href="facebook.com"
+        ><img class="social-logo" src="/facebook-logo.svg" alt="Facebook Logo"
+      /></a>
+    </div>
+  </div>
+
+  } @if (storesMenu) {
+  <div id="stores-back-wrapper">
+    <h2 (click)="storesMenu = false">INFO</h2>
+  </div>
+  <div id="mobile-stores">
+    <div id="stores-wrapper">
+      <div class="store">
+        <h3>Barcelona Location</h3>
+        <p>C/58 Passeig de gràcia</p>
+        <img class="map-image" src="/mapaTiendaGracia.png" alt="mapa gracia" />
+      </div>
+      <div class="store">
+        <h3>Madrid Location</h3>
+        <p>Gran Via, 41</p>
+        <img class="map-image" src="/mapaTiendaMadrid.png" alt="mapa gracia" />
+      </div>
+      <div class="store">
+        <h3>Paris Location</h3>
+        <p>Porte Berger, 106</p>
+        <img class="map-image" src="/mapaTiendaParis.png" alt="mapa gracia" />
+      </div>
+    </div>
+  </div>
+
+  }
+</footer>

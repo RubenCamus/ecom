@@ -1,31 +1,42 @@
 footer {
+  position: static;
   display: flex;
+  flex-direction: column;
   background-color: black;
   left: 0;
+  right: 0;
   bottom: 0;
   color: white;
   width: 100%;
 }
 .group-a {
-  width: 50%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  font-size: 1.5em;
 }
-
+h2:hover {
+  cursor: pointer;
+  font-size: 175%;
+}
 .group-b {
-  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
-.stores-wrapper {
+#stores-wrapper {
   display: flex;
+  width: 100%;
+  justify-content: space-around;
 }
 .store {
-  padding-right: 2rem;
+  padding: 1.5rem;
 }
 
 .socials-wrapper {
   display: flex;
   padding: 1rem;
+  justify-content: space-around;
 }
 .socials-wrapper a {
   color: white;
@@ -35,6 +46,7 @@ footer {
   padding: 0rem 1rem;
 }
 .policies-wrapper {
+  width: 75%;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   padding: 0 1rem;
@@ -43,16 +55,51 @@ footer {
   color: white;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  width: fit-content;
 }
 .social-logo {
   width: 48px;
   height: 48px;
 }
-
+.map-image {
+  width: 15em;
+  height: 10em;
+}
+#mobile-stores {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  visibility: visible;
+}
+#stores-back-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
 @media screen and (max-width: 950px) {
   /*TODO anadir desplegable de stores*/
+  .map-image {
+    display: none;
+    visibility: hidden;
+  }
   .group-b {
     display: none;
     visibility: hidden;
+  }
+  #info.hide {
+    display: none;
+    visibility: hidden;
+  }
+  .group-a {
+    font-size: 1em;
+  }
+  .socials-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .social-logo {
+    width: 2.5em;
+    height: 2.5em;
   }
 }
