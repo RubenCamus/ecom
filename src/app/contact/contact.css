@@ -83,6 +83,9 @@
   .title-wrapper {
     padding: 0 0.5em;
   }
+  .title-wrapper {
+    font-size: 2em;
+  }
   .form-wrapper {
     padding: 0 0.5em;
   }

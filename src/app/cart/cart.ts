@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, inject } from '@angular/core';
+import { Component, Output, EventEmitter, inject, afterNextRender } from '@angular/core';
 import { CartService } from '../services/cart-service';
 import { CartProduct } from './cart-product';
 
@@ -23,7 +23,7 @@ import { CartProduct } from './cart-product';
       <div class="bottom-container">
         <div class="total-wrapper">
           <span>Subtotal:</span>
-          <span>$100</span>
+          <span>{{ totalPrice }} € </span>
         </div>
         <button class="checkout-button">Checkout</button>
         <img src="" alt="" />
@@ -36,7 +36,7 @@ import { CartProduct } from './cart-product';
 })
 export class Cart {
   @Output() close = new EventEmitter<void>();
-
+  totalPrice = 50;
   closeBtn() {
     this.close.emit();
   }

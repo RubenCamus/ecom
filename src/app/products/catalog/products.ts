@@ -8,7 +8,6 @@ import { CartService } from '../../services/cart-service';
     <div class="products-container">
       <h1>Products</h1>
       <p style="">Sort by:</p>
-      <br />
       <div class="products-wrapper">
         <div class="products-display">
           <!-- This for loop loads product cards dynamically on the amount of products inside the mock data below -->
